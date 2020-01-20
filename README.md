@@ -44,7 +44,9 @@ Both Android and iOS have special support for playlist-based playback, and the n
 As with most cordova plugins...
 
 ```
-cordova plugin add cordova-plugin-playlist
+
+cordova plugin add https://github.com/paulovargatt/cordova-plugin-playlist
+
 ```
 
 Rather than oblige all developers to include background permissions, add the following to your `config.xml` if you wish to support continuing to play audio in the background:
