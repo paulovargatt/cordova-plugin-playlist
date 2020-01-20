@@ -30,7 +30,7 @@
 * }
 */
 import { Injectable, NgZone } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform } from '@ionic/angular';
 import { ReplaySubject } from 'rxjs/ReplaySubject';
 import {
   RmxAudioPlayer,
@@ -43,7 +43,10 @@ import {
 } from 'cordova-plugin-playlist';
 export * from 'cordova-plugin-playlist'; // 'cordova-plugin-playlist/www/index.d'
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
+
 export class CordovaAudioPlayerService {
 
   private AudioPlayer: RmxAudioPlayer;
